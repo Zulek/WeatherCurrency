@@ -18,6 +18,8 @@ WeatherCurrency
 Чтобы создать WAR используйте ```mvn clean package```.
 Запустить WAR файл можно через ```mvn jetty:run-war```.
 
+В файле ```/resources/META-INF/apache-deltaspike.properties``` находится API ключ http://openweathermap.org (мой указан пока что для удобства).
+
 Лог файл находится в ```/logs/tzlogger.log```
 
 Автор
