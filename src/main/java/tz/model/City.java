@@ -1,8 +1,12 @@
 package tz.model;
 
+
+import org.slf4j.*;
 import java.util.ArrayList;
 
 public class City {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger("tzlogger");
 
     private final String id;
     private final String name;
@@ -21,6 +25,9 @@ public class City {
     }
 
     public static ArrayList<City> getCities() {
+
+        LOGGER.debug("Creating pre-defined cities array");
+
         ArrayList<City> cities = new ArrayList<>();
 
         City city = new City("498817", "Санкт-Петербург");
